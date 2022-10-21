@@ -7,10 +7,16 @@
     <title></title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"> </script>
 </head>
 
 <body>
 
+    <div class="container">
+        
+    
 
 <!-- Add code here -->
 <section id="app">
@@ -24,18 +30,39 @@
 <section id="games">
     <h1> Games </h1>
     <div class="line"></div>
-    <a href="https://studio.code.org/projects/bounce/kUrritN3kL3owZjPX9AGsIOf14JQnmGWnym83kNBdUo" target="_blank">
-        <img src="game one.png">
-    </a>
-    <a href="https://studio.code.org/projects/gamelab/l0haueXwhflNAAC3HMXGB0hdf7SUxfcQhNmw9nOYvGY" target="_blank">
-        <img src="game two.png">
-    </a>
+
+    <div id="myCarousel" class="carousel slide">
+        <center>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <a href="https://studio.code.org/projects/bounce/kUrritN3kL3owZjPX9AGsIOf14JQnmGWnym83kNBdUo" target="_blank">
+                        <img src="game one.png">
+                    </a>
+                    <p> Ball Bounce </p>
+                </div>
+             <div class="item">
+                <a href="https://studio.code.org/projects/gamelab/l0haueXwhflNAAC3HMXGB0hdf7SUxfcQhNmw9nOYvGY" target="_blank">
+                    <img src="game two.png">
+                </a>
+                <p> Be in space </p>
+             </div>
+            </div>
+               <a href="#myCarousel" class="left carousel-control" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+               </a>
+
+        </center>
+    </div>
 </section>
 <section id="ChatBox">
     <h1>ChatBox</h1>
     <div class="line"></div>
     <iframe height="430" width="350" src="https://bot.dialogflow.com/a30d0950-05bb-4104-b600-8817e7d87478"></iframe>
 </section>
+</div>
 </body>
 
 </html>
